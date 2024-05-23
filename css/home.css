@@ -1,0 +1,269 @@
+body, html {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ scroll-behavior: smooth; 
+  background: linear-gradient(to right, #2c3e50, #000000);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #202020;
+    padding: 0.5em 0em;
+    border-radius: 25px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.isi-main {
+	padding-top: 70px;
+}
+
+.img-random {
+	height: 102px; 
+}
+
+.profile-head {
+	cursor: pointer;
+	transition: 0.5s;
+}
+.profile-head:hover {
+	opacity: 0.5;
+	transition: 0.8s;
+}
+
+.button-head {
+	display: flex;
+}
+
+.button-head ul li {
+	display: inline-block;
+	padding: 8px 71px;
+	position: relative;
+}
+
+.button-head ul li a {
+	font-size: 17px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+.button-head ul li::after {
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.8s;
+}
+
+.button-head ul li:hover::after {
+	width: 100%;
+}
+
+main {
+ display: flex;
+flex-wrap: wrap;
+ justify-content: space-between;
+padding: 10px;
+ }
+
+.judul-h2 {
+	text-align: center;
+}
+
+aside {
+flex: 0 0 30%; 
+background-color: #eee;
+padding: 10px;
+box-sizing: border-box;
+ }
+
+img {
+max-width: 100%;
+height: auto;
+ }
+
+article {
+flex: 0 0 65%;
+background-color: #eee;
+padding: 10px;
+box-sizing: border-box;
+ }
+
+.footer {
+background-color: #202020;
+font-size: 12px;
+color: #000000;
+padding: 10px;
+text-align: center;
+font-weight: bold;
+}
+
+.p1 {
+	color: rgb(160, 160, 160);
+}
+
+
+/* PROFILE START ABOUT */
+
+.content {
+	padding-top: 60px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 10px;
+	justify-content: center;
+}
+
+.content div {
+	position: relative;
+	width: 32.2%;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.content div img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	transition: 0.3s ease;
+}
+
+.content div:hover img {
+	transform: scale(1.2);
+}
+
+.content div .title-box {
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(0,0,0,0), #000000);
+	z-index: 1;
+	transform: translateY(50px);
+	transition: 0.5s ease;
+}
+
+.content div:hover .title,
+.content div:hover .title-box{
+	transform: translateY(0);
+}
+
+.content div .title {
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	z-index: 2;
+	bottom: 10px;
+	padding: 10px;
+	transform: translateY(50px);
+	transition: 0.5 ease;
+	cursor: pointer;
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* PROFILE END ABOUT */
+
+/* INFO */
+
+.info {
+  padding: 3rem 7% 1.4rem;
+}
+
+.info h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: "poppins";
+  font-size: 3rem;
+  font-style: bold;
+  color: #ffff;
+}
+
+.introduction h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  padding: 0rem 7%;
+}
+
+.introduction p {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 1.2rem;
+  font-family: "Roboto";
+  font-style: bold;
+  max-width: 50rem;
+  margin: auto;
+  color: #ffff;
+}
+
+/* INFO */
+
+/* EDUCATION START*/
+
+
+.logo {
+	padding-top: 80px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.univ {
+	text-align: center;
+	color: #ffffff;
+}
+
+.go-to-profile a {
+	color: red;
+	font-weight: bold;
+}
+
+.go-to-profile {
+	background-color: #fff;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	color: #f44336;
+	padding: 9px 24px;
+	transition: 0.8s;
+	font-size: 12px;
+	border-radius: 15px;
+}
+
+.go-to-profile:hover {
+	background-color: #f44336;
+	border: none;
+	transition: 0.7s;
+	color: #fff;
+}
+
+.div-go-to {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
